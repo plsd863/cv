@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое резюме</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        /* Шапка резюме */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .header-info {
+            flex: 1;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .position {
+            color: #7f8c8d;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        /* Контактная информация */
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item i {
+            margin-right: 8px;
+            color: #3498db;
+        }
+        
+        /* Секции */
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: #e0f7fa;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #00838f;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .photo {
+                margin: 15px 0 0 0;
+            }
+            
+            .contacts {
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-info">
+                <h1>Владимиренко Максим Олегович</h1>
+                <p class="position">Студент</p>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+375 29 354 65 76</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>plsd863@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/plsd863</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Беларусь, Витебск</span>
+                    </div>
+                </div>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Фото" class="photo">
+        </header>
+        
+        <section>
+            <h2>О себе</h2>
+            <p>Студент ВГУ имени П.М.Машерова, хочу стать бизнесменом, имею опыт работы, холост.</p>
+        </section>
+        
+        <section>
+            <h2>Опыт работы</h2>
+            <div>
+                <h3>Студент</h3>
+                <p class="date">Сентябрь 2024 - настоящее время</p>
+                <p>ООО "Технологии будущего"</p>
+                <ul>
+                    <li>Разработка и поддержка клиентской части веб-приложений</li>
+                    <li>Оптимизация производительности и улучшение UX</li>
+                    <li>Руководство командой из 3 разработчиков</li>
+                    <li>Внедрение новых технологий в проекты компании</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Frontend разработчик</h3>
+                <p class="date">Март 2018 - Декабрь 2019</p>
+                <p>ООО "ВебСтандарт"</p>
+                <ul>
+                    <li>Создание адаптивных веб-интерфейсов</li>
+                    <li>Интеграция с REST API</li>
+                    <li>Участие в code review</li>
+                    <li>Тестирование и отладка кода</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Образование</h2>
+            <div>
+                <h3>Витебский Государственный Университет</h3>
+                <p class="date">2014 - 2018</p>
+                <p>Бакалавр компьютерных наук</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Навыки</h2>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Vue.js</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">Git</span>
+                <span class="skill">Webpack</span>
+                <span class="skill">SASS</span>
+                <span class="skill">Responsive Design</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Языки</h2>
+            <ul>
+                <li>Русский - родной</li>
+                <li>Английский - продвинутый (C1)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
